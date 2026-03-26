@@ -1,5 +1,6 @@
 import React from 'react'
-import "./css/Login.css"
+import { Link } from 'react-router-dom';
+import "./css/Login.css";
 import studentimg from "../../assets/studentimg.png";
 
 const Login = () => {
@@ -16,7 +17,7 @@ const Login = () => {
             <label className="Login-Remember-me">
               <input type="checkbox" /> Remember me
             </label>
-            <a href="">Sign up</a>
+            <Link to="/signup">Sign up</Link>
           </div>
           <button>Login in</button>
           <a href="">Forgot password?</a>

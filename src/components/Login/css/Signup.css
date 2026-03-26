@@ -1,0 +1,90 @@
+.Signup-MainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f5f7fa, #4a90e2);
+}
+
+.Signup-innercontainer {
+    width: 35rem;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(3, 3, 89);
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(23, 2, 130, 0.85);
+}
+
+.Signup-studentimg {
+    width: 100%;
+    max-width: 28rem;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.Signup-formcontainer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Signup-formcontainer input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.Signup-formcontainer input:focus {
+    border-color: #4a90e2;
+}
+
+.Signup-options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Signup-Remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+
+.Signup-formcontainer button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Signup-formcontainer button:hover {
+    background-color: #357abd;
+}
+
+.Signup-formcontainer a {
+    font-size: 17px;
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.Signup-formcontainer a:hover {
+    text-decoration: underline;
+}
