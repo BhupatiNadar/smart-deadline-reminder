@@ -1,8 +1,10 @@
 import React from 'react'
-
+import "./css/HorzontalNavbar.css"
 const HorzontalNavbar = () => {
   return (
-    <div>HorzontalNavbar</div>
+    <div>
+     
+    </div>
   )
 }
 
