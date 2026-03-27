@@ -13,7 +13,7 @@ const Signup = () => {
         <div className="Signup-formcontainer">
           <input type="text" placeholder="Enter Your email" />
           <input type="text" placeholder="Enter Your passward" />
-          <input type="text" placeholder="ReEnter Your passward" />
+          <input type="text" placeholder="Re-enter Your passward" />
           <div className="Signup-options">
             <label className="Signup-Remember-me">
               <input type="checkbox" /> Remember me
