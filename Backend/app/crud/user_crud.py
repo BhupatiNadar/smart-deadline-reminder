@@ -25,6 +25,19 @@ def Create_User(db: Session, user: User):
     db.refresh(db_user)
 
     return {
-        "email": db_user.User_email,
-        "password": db_user.User_password
+        "Signup":True
     }
+    
+def Search_user(db: Session, user: User):
+
+    existing_user = db.query(UserModel).filter(
+        UserModel.User_email == user.email
+    ).first()
+
+    if not existing_user:
+        return {"User_found": False}
+
+    if existing_user.User_password == user.password:
+        return {"User_found": True}
+
+    return {"User_found": False}
