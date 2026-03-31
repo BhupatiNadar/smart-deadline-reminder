@@ -1,6 +1,6 @@
 import React from 'react'
-import { Form, Link } from 'react-router-dom';
 import "./css/Login.css";
+import { Link } from "react-router-dom";
 import studentimg from "../../assets/studentimg.png";
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
@@ -21,13 +21,14 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("FORM SUBMITTED");
     try {
       const response = await axios.post("http://127.0.0.1:8000/login", {
         email: loginform.email,
         password: loginform.password,
         
       });
-      if (response.data.User_found === true) {
+      if (response.data.User_found) {
         navigate("/dashboard");
       }
       console.log(response.data);
@@ -62,7 +63,9 @@ const Login = () => {
               </label>
               <Link to="/signup">Sign up</Link>
             </div>
-            <button type="submit">Login in</button>
+            <button onClick={() => console.log("BUTTON CLICKED")}>
+              Login in
+            </button>
             <a href="">Forgot password?</a>
           </form>
         </div>
